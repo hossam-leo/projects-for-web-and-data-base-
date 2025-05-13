@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+#controls-section button, 
+#add-post-form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#controls-section button:hover, 
+#add-post-form button:hover {
+    background-color: #4cae4c;
+}
+
+#add-post-form div {
+    margin-bottom: 1rem;
+}
+
+#add-post-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#add-post-form input[type="text"],
+#add-post-form input[type="number"],
+#add-post-form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* So padding doesn't add to width */
+}
+
+#add-post-form textarea {
+    resize: vertical;
+}
+
+#posts-container .post {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#posts-container .post h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+#posts-container .post p {
+    margin-bottom: 1rem;
+}
+
+#posts-container .post button.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#posts-container .post button.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+#loading-indicator,
+#add-post-feedback {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#add-post-feedback.success {
+    color: green;
+}
+
+#add-post-feedback.error {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+        margin: 10px auto;
+    }
+
+    #add-post-form input[type="text"],
+    #add-post-form input[type="number"],
+    #add-post-form textarea {
+        width: calc(100% - 20px);
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+}
